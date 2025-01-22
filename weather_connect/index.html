@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather connect</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav2">
+                <div>
+                    <img src="assets/images/weather_connect_logo.png" id="logo">
+                </div>
+                <div id="nav3">
+                    <input type="text" id="search" placeholder="City Name"></input>
+                    <button id="searchButton"><img id="searchIcon" src="assets/icons/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="box">
+            <div>
+                <h1>Beni Mellal</h1>
+            </div>
+            <img id="icon" src="assets/icons/animated/day.svg">
+            <div id="info">
+                <p>17°C</p>
+                <p>humidtiy 2%</p>
+                <p>conditions</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById("searchButton").addEventListener('click', () => {
+            const search = document.getElementById("search").value;
+            alert(search);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgb(61, 61, 61);
+}
+
+#logo {
+    height: 80px;
+}
+
+#nav2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+}
+
+input {
+    border: none;
+    border-radius: 15px;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+button {
+    background: none;
+    border: none;
+    width: 40px;
+}
+
+#searchIcon {
+    width: 35px;
+}
+
+#nav3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+body {
+    background-image: url(/SP2_BR4/assets/images/pexels-pixabay-209831.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+#box {
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 500px;
+    height: 380px;
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 5% 0 5% 0;
+    box-shadow: 0px 1px 5px rgb(61, 61, 61);
+
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+#icon {
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+
+}
