@@ -23,22 +23,25 @@
 
     <section>
         <div id="box">
-            <div>
-                <h1>Beni Mellal</h1>
+            <div id="info1">
+                <h1 id="currentDay"></h1>
+                <img id="icon" src="assets/icons/animated/day.svg">
+                <h1 id="condition"></h1>
+                <h2 id="city"></h2>
             </div>
-            <img id="icon" src="assets/icons/animated/day.svg">
-            <div id="info">
-                <p>17°C</p>
-                <p>humidtiy 2%</p>
-                <p>conditions</p>
+            <div id="info2">
+                <div class="infoIcon"><img src="assets/icons/icons8-thermometer-48.png"><p id="temp"></p></div>
+                <div class="infoIcon"><img src="assets/icons/icons8-wet-48.png"><p id="humidity"></p></div>
+                <div class="infoIcon"><img src="assets/icons/icons8-wind-48.png"><p id="wind"></p></div>
             </div>
         </div>
     </section>
-    <script>
+    <!-- <script>
         document.getElementById("searchButton").addEventListener('click', () => {
             const search = document.getElementById("search").value;
             alert(search);
         });
-    </script>
+    </script> -->
+    <script src="scripts/script.js"></script>
 </body>
 </html>
