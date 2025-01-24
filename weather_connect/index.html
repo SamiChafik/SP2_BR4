@@ -21,27 +21,54 @@
         </nav>
     </header>
 
-    <section>
-        <div id="box">
-            <div id="info1">
-                <h1 id="currentDay"></h1>
-                <img id="icon" src="assets/icons/animated/day.svg">
-                <h1 id="condition"></h1>
-                <h2 id="city"></h2>
+    <div id="mainSection">
+        <section>
+            <div id="box">
+                <div id="info1">
+                    <h1 id="currentDay1"></h1>
+                    <img id="icon1" src="assets/icons/animated/day.svg">
+                    <h1 id="condition1"></h1>
+                    <h2 id="city"></h2>
+                </div>
+                <div id="info2">
+                    <div class="infoIcon"><img src="assets/icons/icons8-thermometer-48.png"><p id="temp1"></p></div>
+                    <div class="infoIcon"><img src="assets/icons/icons8-wet-48.png"><p id="humidity"></p></div>
+                    <div class="infoIcon"><img src="assets/icons/icons8-wind-48.png"><p id="wind"></p></div>
+                </div>
             </div>
-            <div id="info2">
-                <div class="infoIcon"><img src="assets/icons/icons8-thermometer-48.png"><p id="temp"></p></div>
-                <div class="infoIcon"><img src="assets/icons/icons8-wet-48.png"><p id="humidity"></p></div>
-                <div class="infoIcon"><img src="assets/icons/icons8-wind-48.png"><p id="wind"></p></div>
+        </section>
+
+        <section id="section2">
+            <div class="section2_1">
+                <div class="box2">
+                    <h1 id="currentDay2"></h1>
+                    <img id="icon2" src="assets/icons/animated/day.svg">
+                    <p id="condition2"></p>
+                    <p id="temp2"></p>
+                </div>
+                <div class="box2">
+                    <h1 id="currentDay3"></h1>
+                    <img id="icon3" src="assets/icons/animated/day.svg">
+                    <p id="condition3"></p>
+                    <p id="temp3"></p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- <script>
-        document.getElementById("searchButton").addEventListener('click', () => {
-            const search = document.getElementById("search").value;
-            alert(search);
-        });
-    </script> -->
+            <div class="section2_1">
+                <div class="box2">
+                    <h1 id="currentDay4"></h1>
+                    <img id="icon4" src="assets/icons/animated/day.svg">
+                    <p id="condition4"></p>
+                    <p id="temp4"></p>
+                </div>
+                <div class="box2">
+                    <h1 id="currentDay5"></h1>
+                    <img id="icon5" src="assets/icons/animated/day.svg">
+                    <p id="condition5"></p>
+                    <p id="temp5"></p>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
