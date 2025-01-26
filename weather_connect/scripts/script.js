@@ -20,6 +20,14 @@ async function checkWeather() {
     const response = await fetch(apiUrl + `&q=${city.value}` + `&appid=${apiKey}`);
     var data = await response.json();
 
+    const img1 = document.getElementById("img1");
+    const img2 = document.getElementById("img2");
+    const img3 = document.getElementById("img3");
+
+    img1.src = './assets/icons/icons8-thermometer-48.png';
+    img2.src = './assets/icons/icons8-wet-48.png';
+    img3.src = 'assets/icons/icons8-wind-48.png';
+
     console.log(data);
 
     if (data.cod == '404') {
@@ -30,6 +38,7 @@ async function checkWeather() {
     document.querySelector("#city").innerHTML = data.city.name;
     document.querySelector("#humidity").innerHTML = data.list[0].main.humidity;
     document.querySelector("#wind").innerHTML = `${data.list[0].wind.speed}km/h`;
+    
 
     for(let i = 0; i < 5; i++){
         const index = i * 8;
