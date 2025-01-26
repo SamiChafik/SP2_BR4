@@ -21,6 +21,10 @@ async function checkWeather() {
     var data = await response.json();
 
     console.log(data);
+
+    if (data.cod == '404') {
+        alert(data.message);
+    }
     
 
     document.querySelector("#city").innerHTML = data.city.name;
